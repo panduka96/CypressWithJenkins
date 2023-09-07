@@ -1,0 +1,144 @@
+{
+    "token": "DBRP1374071308",
+    "code": "DBRP1374071308",
+    "shortCode": "DBRPO58",
+    "preOrder": false,
+    "expiryDate": "2023-05-23T10:10:18.007Z",
+    "createdAt": "2023-05-23T10:10:18.007Z",
+    "localInfo": {
+        "platform": "TALABAT",
+        "countryCode": "SA",
+        "currencySymbol": "SAR",
+        "timezone": "UTC+4"
+    },
+    "platformRestaurant": {
+        "id": "12903"
+    },
+    "customer": {
+        "firstName": "Panduka",
+        "lastName": "Wijekoon",
+        "mobilePhone": "+94778883421"
+    },
+    "payment": {
+        "remoteCode": "Cash",
+        "type": "Cash",
+        "status": "pending"
+    },
+    "expeditionType": "delivery",
+    "products": [
+        {
+            "id": "Chicken Burger",
+            "remoteCode": "6414198442dad056e7274e65",
+            "name": "Chicken Burger",
+            "description": "",
+            "comment": "",
+            "categoryName": null,
+            "variation": {
+                "name": "Chicken Burger"
+            },
+            "unitPrice": 45,
+            "paidPrice": 90,
+            "discountAmount": "",
+            "quantity": 2,
+            "halfHalf": false,
+            "vatPercentage": "",
+            "selectedChoices": [],
+            "selectedToppings": [
+                {
+                    "remoteCode": "6414198442dad056e7274e66",
+                    "name": "Spicy French Fries",
+                    "price": 5,
+                    "quantity": 1,
+                    "children": []
+                }
+            ]
+        }
+    ],
+    "corporateTaxId": "",
+    "comments": {
+        "customerComment": "Please send this immediately"
+    },
+    "vouchers": [],
+    "discounts": [
+        {
+            "name": "Disc_10",
+            "type": "Disc_10",
+            "amount": "13"
+        }
+    ],
+    "price": {
+        "minimumDeliveryValue": "",
+        "comission": "",
+        "deliveryFee": 9,
+        "deliveryFees": [
+            {
+                "name": "Tourist Tax",
+                "value": 0
+            },
+            {
+                "name": "Service Fee",
+                "value": 6
+            },
+            {
+                "name": "Delivery Fee",
+                "value": 9
+            },
+            {
+                "name": "Municipality Tax",
+                "value": 0
+            },
+            {
+                "name": "Talabat Charges",
+                "value": 0
+            }
+        ],
+        "containerCharge": "",
+        "deliveryFeeDiscount": "",
+        "serviceFeePercent": "",
+        "serviceFeeTotal": "",
+        "serviceTax": 0,
+        "serviceTaxValue": 0,
+        "subTotal": "100",
+        "vatVisible": true,
+        "vatPercent": "0",
+        "vatTotal": "0",
+        "grandTotal": "296",
+        "discountAmountTotal": "13",
+        "differenceToMinimumDeliveryValue": "",
+        "payRestaurant": "0",
+        "collectFromCustomer": "0",
+        "riderTip": "0"
+    },
+    "webOrder": false,
+    "mobileOrder": true,
+    "corporateOrder": false,
+    "integrationInfo": {},
+    "test": false,
+    "extraParameters": {
+        "chainId": "600969"
+    },
+    "delivery": {
+        "expressDelivery": false,
+        "address": {
+            "street": "9 St",
+            "number": "13",
+            "room": "10",
+            "flatNumber": "25",
+            "building": "KCC",
+            "intercom": "EE",
+            "entrance": "BB",
+            "floor": "5",
+            "district": "Al Quoz 1",
+            "city": "Dubai",
+            "postcode": "123",
+            "company": "ABC",
+            "deliveryMainArea": "1252 Business Bay",
+            "deliveryArea": "Al Quoz 1",
+            "deliveryAreaPostcode": "25",
+            "deliveryInstructions": "Other",
+            "latitude": "25.05041525197123",
+            "longitude": "55.1315917698422"
+        },
+        "riderPickupTime": null
+    }
+}

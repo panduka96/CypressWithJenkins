@@ -1,0 +1,123 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-08-09T14:09:42.336Z",
+    "end": "2023-08-09T14:10:02.554Z",
+    "duration": 20218,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4b05c4b2-113a-4f1d-a6c5-08780441323e",
+      "title": "",
+      "fullFile": "cypress\\e2e\\specs\\script.cy.ts",
+      "file": "cypress\\e2e\\specs\\script.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e0769686-2388-4559-869b-70a84a10b621",
+          "title": "Dispatcher Testing",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify Dispatcher Login",
+              "fullTitle": "Dispatcher Testing Verify Dispatcher Login",
+              "timedOut": null,
+              "duration": 14551,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(user_inputs.url);\nloginPage.enterUsername(user_inputs.username);\nloginPage.enterPassword(user_inputs.password);\nloginPage.clickLogin();\nsysSelectionPage.clickOnLocationDropDown();\nsysSelectionPage.selectKitchen();\nsysSelectionPage.clickDispatcherBtn();\ndispatcherHomePage.checkVisibilityOfElement();",
+              "err": {},
+              "uuid": "a82cdf3a-a48c-4a3a-85d8-c32b39a6be2f",
+              "parentUUID": "e0769686-2388-4559-869b-70a84a10b621",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify create an delivery by Restaurant order (Talabat)",
+              "fullTitle": "Dispatcher Testing Verify create an delivery by Restaurant order (Talabat)",
+              "timedOut": null,
+              "duration": 3313,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n    method: 'POST',\n    url: user_details.talabaturl,\n    body: talabat_payload\n}).then((res) => {\n    expect(res.status).to.be.equal(202);\n});",
+              "err": {},
+              "uuid": "7c9d788b-faf8-4653-b435-c6949ee49050",
+              "parentUUID": "e0769686-2388-4559-869b-70a84a10b621",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a82cdf3a-a48c-4a3a-85d8-c32b39a6be2f",
+            "7c9d788b-faf8-4653-b435-c6949ee49050"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 17864,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": true,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
