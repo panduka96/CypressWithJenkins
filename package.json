@@ -8,7 +8,7 @@
     "posttest": "echo Post-Test",
     "test": "echo Test",
     "cy-test": "cypress run",
-    "test:cli": "npx cypress run",
+    "test:cli": "npx cypress run --record --key 618883b1-0bc8-4779-9d3f-97a5062112b5",
     "merge:reports": "mochawesome-merge mochawesome-report/*.json > cypress-combined-report.json",
     "create:html:report": "npm run merge:reports && marge --reportDir TestReport cypress-combined-report.json"
   },
